@@ -1,0 +1,28 @@
+smart-traffic-management/
+│
+├── models/
+│   └── yolov8_traffic.pt              # YOLO model (pretrained/custom)
+│
+├── data/
+│   ├── input_video.mp4                # Sample traffic video
+│   └── test_images/                   # Optional test frames
+│
+├── output/
+│   ├── violations/                    # Saved violation proof images
+│   └── logs.csv                       # All violation logs (timestamp, type, path)
+│
+├── src/
+│   ├── smart_traffic.py               # Main execution file
+│   ├── detection_utils.py             # Common YOLO + bounding box functions
+│   ├── helmet_logic.py                # Helmet violation logic
+│   ├── signal_logic.py                # Stop-line red-signal violation logic
+│   └── metrics.py                     # Precision, recall, confusion matrix
+│
+├── docs/
+│   ├── report.pdf                     # Final documentation (optional)
+│   ├── project_flow.png               # Architecture diagram / pipeline
+│   └── screenshots/                   # Output images for README
+│
+├── README.md                          # Project documentation
+├── requirements.txt                   # Dependencies
+└── .gitignore                         # Ignoring output/models/cache files
