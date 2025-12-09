@@ -70,7 +70,7 @@ The project generates:
 - Best parameters from GridSearch  
 - Feature importance bar charts  
 
-*(You can later add tables or screenshots if uploading to GitHub.)*
+
 
 ---
 
